@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.container {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.container2 {
+  display: flex;
+}
+.container > button {
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.container2 > h1 {
+  color: red;
+}
