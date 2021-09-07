@@ -8,6 +8,9 @@ function App() {
   const handleClick = e => {
     setCount(count + 1);
   }
+  const resetCounter = e => {
+    setCount(0)
+  }
   return (
     <div className="App">
       <Button
@@ -15,7 +18,7 @@ function App() {
         primaryText='Click me'
         primaryColor='green'
       />
-      <Text text={counter.value} />
+      <Text text={count} />
       <Button
         handleClick={e => resetCounter(e)}
         primaryText='Reset counter'
